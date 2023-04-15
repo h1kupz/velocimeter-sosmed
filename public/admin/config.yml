@@ -1,5 +1,6 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: h1kupz/velocimeter-sosmed
   branch: main # Branch to update (optional; defaults to master)
 
 site_url: https://timely-pixie-ab7c79.netlify.app
