@@ -35,8 +35,6 @@ collections:
       - { label: Card 1 Apr, name: c1Apr, widget: string }
       - { label: Card 1 Pair, name: c1Pair, widget: string }
 
-      - { label: Card 2 Title, name: title, widget: string }
-      - { label: Card 2 Header, name: header, widget: string }
       - {
           label: "Card 2 Token 1",
           name: "c2Token1",
