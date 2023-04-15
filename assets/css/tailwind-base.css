@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply w-screen overflow-x-hidden bg-background;
+  }
+  header {
+    @apply sticky top-0 layout py-4;
+  }
+  nav {
+    @apply flex justify-between items-center bg-primary layout rounded-t-2xl rounded-b p-4;
+  }
+  nav ul {
+    @apply flex flex-col md:flex-row gap-lg md:gap-sm md:ml-auto font-body text-nav text-3xl md:text-lg;
+  }
+  main {
+    @apply layout min-h-screen prose;
+  }
+}
+
+@layer components {
+  .site-padding {
+    @apply p-6 md:p-8;
+  }
+  .gap-sm {
+    @apply gap-4;
+  }
+  .gap-lg {
+    @apply gap-10;
+  }
+  .layout {
+    @apply max-w-screen-lg mx-auto site-padding;
+  }
+  .prose {
+    @apply font-body text-text prose-sm md:prose-base prose-headings:mt-0 prose-headings:text-headings prose-headings:font-black;
+  }
+  .trans {
+    @apply transition duration-300 ease-in-out;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2px;
+  background: #fe3488;
+}

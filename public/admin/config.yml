@@ -1,0 +1,55 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+site_url:
+display_url:
+logo_url:
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - label: "Twitter"
+    name: "twitter"
+    folder: "content/twitter"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Card 1 Title, name: title, widget: string }
+      - { label: Card 1 Header, name: header, widget: string }
+      - {
+          label: "Card 1 Token 1",
+          name: "c1Token1",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
+          label: "Card 1 Token 2",
+          name: "c1Token2",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Card 1 Apr, name: c1Apr, widget: string }
+      - { label: Card 1 Pair, name: c1Pair, widget: string }
+
+      - { label: Card 2 Title, name: title, widget: string }
+      - { label: Card 2 Header, name: header, widget: string }
+      - {
+          label: "Card 2 Token 1",
+          name: "c2Token1",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
+          label: "Card 2 Token 2",
+          name: "c2Token2",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Card 2 Apr, name: c2Apr, widget: string }
+      - { label: Card 2 Pair, name: c2Pair, widget: string }
