@@ -33,6 +33,7 @@ collections:
           choose_url: true,
           required: true,
         }
+      - { label: Card 1 Ticker 1, name: c1Ticker1, widget: string }
       - {
           label: "Card 1 Token 2",
           name: "c1Token2",
@@ -40,8 +41,8 @@ collections:
           choose_url: true,
           required: true,
         }
+      - { label: Card 1 Ticker 2, name: c1Ticker2, widget: string }
       - { label: Card 1 Apr, name: c1Apr, widget: string }
-      - { label: Card 1 Pair, name: c1Pair, widget: string }
 
       - {
           label: "Card 2 Token 1",
@@ -50,6 +51,7 @@ collections:
           choose_url: true,
           required: true,
         }
+      - { label: Card 2 Ticker 1, name: c2Ticker1, widget: string }
       - {
           label: "Card 2 Token 2",
           name: "c2Token2",
@@ -57,6 +59,6 @@ collections:
           choose_url: true,
           required: true,
         }
+      - { label: Card 2 Ticker 2, name: c2Ticker2, widget: string }
       - { label: Card 2 Apr, name: c2Apr, widget: string }
-      - { label: Card 2 Pair, name: c2Pair, widget: string }
       - { label: Body, name: body, widget: markdown, required: true }

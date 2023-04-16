@@ -19,25 +19,19 @@
           <div v-if="doc.c1Token1">
             <Card
               :Token1="doc.c1Token1"
+              :Ticker1="doc.c1Ticker1"
               :Token2="doc.c1Token2"
+              :Ticker2="doc.c1Ticker2"
               :Apr="doc.c1Apr"
-              :Pair="doc.c1Pair"
             />
           </div>
           <div v-if="doc.c2Token1">
             <Card
               :Token1="doc.c2Token1"
+              :Ticker1="doc.c2Ticker1"
               :Token2="doc.c2Token2"
+              :Ticker2="doc.c2Ticker2"
               :Apr="doc.c2Apr"
-              :Pair="doc.c2Pair"
-            />
-          </div>
-          <div v-if="doc.c3Token1">
-            <Card
-              :Token1="doc.c2Token1"
-              :Token2="doc.c2Token2"
-              :Apr="doc.c2Apr"
-              :Pair="doc.c2Pair"
             />
           </div>
         </div>

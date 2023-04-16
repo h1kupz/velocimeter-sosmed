@@ -28,7 +28,7 @@
       </div>
       <h4>APR:</h4>
       <h2>{{ Apr }}%</h2>
-      <h3>{{ Pair }}</h3>
+      <h3>{{ Ticker1 }}/{{ Ticker2 }}</h3>
     </div>
   </div>
 </template>
@@ -47,7 +47,11 @@ const props = defineProps({
     type: String,
     required: false,
   },
-  Pair: {
+  Ticker1: {
+    type: String,
+    required: false,
+  },
+  Ticker2: {
     type: String,
     required: false,
   },
