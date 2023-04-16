@@ -17,8 +17,8 @@ collections:
     format: "frontmatter"
     create: true
     fields:
-      - { label: Card 1 Title, name: title, widget: string }
-      - { label: Card 1 Header, name: header, widget: string }
+      - { label: Title, name: title, widget: string }
+      - { label: Header, name: header, widget: string }
       - {
           label: "Background Image",
           name: "bgImage",
