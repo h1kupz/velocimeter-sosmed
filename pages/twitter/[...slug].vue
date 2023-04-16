@@ -5,7 +5,7 @@
         id="tweet"
         bgImage
         :style="{ backgroundImage: 'url(' + doc.bgImage + ')' }"
-        class="w-[1200px] h-[675px] p-10 mx-auto flex flex-col items-center justify-center mt-4"
+        class="w-[1200px] h-[675px] p-10 mx-auto flex flex-col items-center justify-center"
       >
         <img
           src="/assets/Velocimeter-lg.png"
@@ -15,9 +15,10 @@
         <h1 class="mr-auto mb-auto text-left">
           {{ doc.header }}
         </h1>
-        <div class="flex gap-8 my-auto" id="cards">
+        <div class="flex gap-5 mt-8 my-auto mx-44" id="cards">
           <div v-if="doc.c1Token1">
             <Card
+              :Cards="doc.cards"
               :Token1="doc.c1Token1"
               :Ticker1="doc.c1Ticker1"
               :Token2="doc.c1Token2"
@@ -27,6 +28,17 @@
           </div>
           <div v-if="doc.c2Token1">
             <Card
+              :Cards="doc.cards"
+              :Token1="doc.c2Token1"
+              :Ticker1="doc.c2Ticker1"
+              :Token2="doc.c2Token2"
+              :Ticker2="doc.c2Ticker2"
+              :Apr="doc.c2Apr"
+            />
+          </div>
+          <div v-if="doc.c3Token1">
+            <Card
+              :Cards="doc.cards"
               :Token1="doc.c2Token1"
               :Ticker1="doc.c2Ticker1"
               :Token2="doc.c2Token2"
@@ -36,8 +48,12 @@
           </div>
         </div>
         <div class="flex w-full" id="footer">
-          <h5 class="w-full ml-20 text-center mt-auto">velocimeter.xyz</h5>
-          <img src="/assets/V.png" alt="" class="w-16 ml-auto mt-auto" />
+          <h5 class="w-full ml-36 text-center mt-auto">velocimeter.xyz</h5>
+          <img
+            src="/assets/V.png"
+            alt=""
+            class="w-36 -mb-10 ml-auto mt-auto bg-circle rounded-full p-8"
+          />
         </div>
       </div>
     </ContentDoc>

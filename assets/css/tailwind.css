@@ -23,7 +23,7 @@
     @apply layout prose;
   }
   h1 {
-    @apply text-4xl font-semibold tracking-wide leading-none -mt-8;
+    @apply text-5xl font-semibold tracking-wide leading-none -mt-8;
   }
   h2 {
     @apply text-7xl font-bold leading-none mb-6;
@@ -61,6 +61,36 @@
   .trans {
     @apply transition duration-300 ease-in-out;
   }
+}
+
+.oneCard {
+  width: 600px;
+}
+.twoCard {
+  width: 400px;
+}
+.threeCard {
+  width: 360px;
+}
+
+.bg-circle {
+  background: rgb(2, 232, 202);
+  background: radial-gradient(
+    circle,
+    rgba(2, 232, 202, 0.05) 0%,
+    rgba(2, 232, 202, 0.1) 2%,
+    rgba(2, 232, 202, 0) 60%
+  );
+}
+
+.bg-circle-dark {
+  background: rgb(0, 0, 0);
+  background: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 0.2) 10%,
+    rgba(0, 0, 0, 0.4) 20%,
+    rgba(0, 0, 0, 0) 80%
+  );
 }
 
 ::-webkit-scrollbar {

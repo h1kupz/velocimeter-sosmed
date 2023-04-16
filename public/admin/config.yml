@@ -26,6 +26,10 @@ collections:
           choose_url: true,
           required: true,
         }
+      - label: "Number of Cards"
+        name: "cards"
+        widget: "select"
+        options: ["oneCard", "twoCard", "threeCard"]
       - {
           label: "Card 1 Token 1",
           name: "c1Token1",

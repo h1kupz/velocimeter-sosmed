@@ -44,7 +44,10 @@ module.exports = {
         roboto: ["Roboto Mono", "mono", "serif"],
       },
       backdropBlur: {
-        v: "200px",
+        v: "3px",
+      },
+      dropShadow: {
+        v: "6px 6px 6px rgba(0, 0, 0, 0.75)",
       },
     },
   },
