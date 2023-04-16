@@ -3,9 +3,9 @@ backend:
   repo: h1kupz/velocimeter-sosmed
   branch: main # Branch to update (optional; defaults to master)
 
-site_url: https://timely-pixie-ab7c79.netlify.app
-display_url: https://timely-pixie-ab7c79.netlify.app
-logo_url: https://timely-pixie-ab7c79.netlify.app/assets/v.png
+site_url: https://velocimeter-sosmed.netlify.app
+display_url: https://velocimeter-sosmed.netlify.app
+logo_url: https://velocimeter-sosmed.netlify.app/assets/v.png
 
 media_folder: public/images
 public_folder: /images
