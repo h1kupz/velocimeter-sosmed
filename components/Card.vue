@@ -3,7 +3,7 @@
     <div
       class="flex items-start rounded-t-3xl w-96 p-5 mx-auto bg-gradient-to-l from-background/50 to-background/20 backdrop-opacity-70 backdrop-blur-2xl h-32 border border-b-0 border-text/30"
     >
-      <img src="/images/CantoLogo.svg" alt="" class="h-8 ml-auto mr-3" />
+      <img src="/assets/CantoLogo.svg" alt="" class="h-8 ml-auto mr-3" />
       <div class="flex flex-col">
         <h5 class="text-cgreen text-xs text-left -mt-[10px] leading-3">
           Live on:

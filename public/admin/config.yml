@@ -20,6 +20,13 @@ collections:
       - { label: Card 1 Title, name: title, widget: string }
       - { label: Card 1 Header, name: header, widget: string }
       - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
           label: "Card 1 Token 1",
           name: "c1Token1",
           widget: "image",

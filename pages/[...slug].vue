@@ -8,7 +8,7 @@
         class="w-[1200px] h-[675px] p-10 mx-auto flex flex-col items-center justify-center mt-16"
       >
         <img
-          src="/images/Velocimeter-lg.png"
+          src="/assets/Velocimeter-lg.png"
           alt=""
           class="w-80 mr-auto mb-auto"
         />
@@ -16,7 +16,7 @@
           {{ doc.header }}
         </h1>
         <div class="flex gap-8 my-auto" id="cards">
-          <div>
+          <div v-if="doc.c1Token1">
             <Card
               :Token1="doc.c1Token1"
               :Token2="doc.c1Token2"
@@ -43,7 +43,7 @@
         </div>
         <div class="flex w-full" id="footer">
           <h5 class="w-full ml-20 text-center mt-auto">velocimeter.xyz</h5>
-          <img src="/images/V.png" alt="" class="w-16 ml-auto mt-auto" />
+          <img src="/assets/V.png" alt="" class="w-16 ml-auto mt-auto" />
         </div>
       </div>
     </ContentDoc>
