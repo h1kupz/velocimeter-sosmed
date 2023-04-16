@@ -1,8 +1,8 @@
 ---
-title: test2
+title: Test2
 header: Earn FLOW
 bgImage: /images/bg-2.png
-c1Token1: /images/atom.svg
+c1Token1: /images/atom.png
 c1Ticker1: ATOM
 c1Token2: /images/flow.png
 c1Ticker2: FLOW
@@ -13,4 +13,5 @@ c2Token2: /images/multiBTC.png
 c2Ticker2: multiBTC
 c2Apr: "43"
 ---
-\#
+
+#

@@ -37,6 +37,9 @@
   h5 {
     @apply font-roboto text-3xl tracking-wide leading-none;
   }
+  ul {
+    @apply flex gap-3 w-screen layout;
+  }
 }
 
 @layer components {

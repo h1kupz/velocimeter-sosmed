@@ -2,10 +2,10 @@
   <NuxtLayout>
     <ContentDoc v-slot="{ doc }">
       <div
-        id="my-div"
+        id="tweet"
         bgImage
         :style="{ backgroundImage: 'url(' + doc.bgImage + ')' }"
-        class="w-[1200px] h-[675px] p-10 mx-auto flex flex-col items-center justify-center mt-16"
+        class="w-[1200px] h-[675px] p-10 mx-auto flex flex-col items-center justify-center mt-4"
       >
         <img
           src="/assets/Velocimeter-lg.png"
@@ -58,7 +58,7 @@ export default {
     saveDivAsImage: async () => {
       if (process.client) {
         const html2canvas = await import("html2canvas");
-        const div = document.getElementById("my-div");
+        const div = document.getElementById("tweet");
         const canvas = await html2canvas.default(div);
         const dataUrl = canvas.toDataURL("image/png");
         const link = document.createElement("a");

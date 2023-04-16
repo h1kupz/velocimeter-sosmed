@@ -2,6 +2,7 @@
   <div>
     <HeadDef />
     <!-- <Header /> -->
+    <Nav />
     <slot />
     <!-- <Footer /> -->
   </div>
