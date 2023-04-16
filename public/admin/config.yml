@@ -59,3 +59,4 @@ collections:
         }
       - { label: Card 2 Apr, name: c2Apr, widget: string }
       - { label: Card 2 Pair, name: c2Pair, widget: string }
+      - { label: Body, name: body, widget: markdown, required: true }
