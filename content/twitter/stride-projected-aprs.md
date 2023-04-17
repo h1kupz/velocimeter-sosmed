@@ -1,6 +1,6 @@
 ---
 title: Stride Projected APRs
-header: The Liquid Staking Zone is Coming To Velocimeter
+header: Stride Assets Projected APRs For Epoch 5
 bgImage: /images/bg-2.png
 cards: twoCard
 c1Token1: /images/strd_800.webp
