@@ -1,5 +1,5 @@
 ---
-title: Stride
+title: Stride Projected APRs
 header: The Liquid Staking Zone is Coming To Velocimeter
 bgImage: /images/bg-2.png
 cards: twoCard
@@ -14,4 +14,4 @@ c2Token2: /images/atom.png
 c2Ticker2: NOTE
 c2Apr: 200%
 ---
-P﻿rojected APR for next epcoh
+A﻿PRs projected for epoch 4
