@@ -30,6 +30,10 @@ collections:
         name: "cards"
         widget: "select"
         options: ["oneCard", "twoCard", "threeCard"]
+      - label: "APR Type"
+        name: "aprType"
+        widget: "select"
+        options: ["APR", "Projected APR"]
       - {
           label: "Card 1 Token 1",
           name: "c1Token1",
@@ -65,4 +69,23 @@ collections:
         }
       - { label: Card 2 Ticker 2, name: c2Ticker2, widget: string }
       - { label: Card 2 Apr, name: c2Apr, widget: string }
+
+      - {
+          label: "Card 3 Token 1",
+          name: "c3Token1",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Card 3 Ticker 1, name: c3Ticker1, widget: string }
+      - {
+          label: "Card 3 Token 2",
+          name: "c3Token2",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Card 3 Ticker 2, name: c3Ticker2, widget: string }
+      - { label: Card 3 Apr, name: c3Apr, widget: string }
+
       - { label: Body, name: body, widget: markdown, required: true }

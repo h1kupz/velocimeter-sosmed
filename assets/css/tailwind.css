@@ -23,16 +23,16 @@
     @apply layout prose;
   }
   h1 {
-    @apply text-5xl font-semibold tracking-wide leading-none -mt-8;
+    @apply text-4xl font-semibold tracking-wide leading-none;
   }
   h2 {
-    @apply text-7xl font-bold leading-none mb-6;
+    @apply text-7xl font-bold leading-none mb-2;
   }
   h3 {
-    @apply text-3xl font-semibold tracking-wider leading-none mb-4;
+    @apply text-3xl font-semibold tracking-wider leading-none mb-1;
   }
   h4 {
-    @apply text-xl font-semibold leading-none -mb-4;
+    @apply text-xl font-semibold leading-none mt-4 mb-2;
   }
   h5 {
     @apply font-roboto text-3xl tracking-wide leading-none;
@@ -64,7 +64,8 @@
 }
 
 .oneCard {
-  width: 600px;
+  width: 500px;
+  height: 230px;
 }
 .twoCard {
   width: 400px;
@@ -99,5 +100,5 @@
 
 ::-webkit-scrollbar-thumb {
   border-radius: 2px;
-  background: #fe3488;
+  background: #02e8ca;
 }

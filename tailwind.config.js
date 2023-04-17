@@ -2,9 +2,14 @@
 
 const colors = {
   background: {
-    light: "#000000",
-    dark: "#000000",
+    light: "#161616",
+    dark: "#161616",
   },
+  lbackground: {
+    light: "#26393a",
+    dark: "#26393a",
+  },
+
   vgreen: {
     light: "#02e8ca",
     dark: "#02e8ca",

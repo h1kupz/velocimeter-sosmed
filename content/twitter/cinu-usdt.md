@@ -3,6 +3,7 @@ title: cINU/USDT
 header: Provide Liquidity and Earn FLOW
 bgImage: /images/bg-2.png
 cards: "twoCard"
+aprType: Projected APR
 c1Token1: /images/usdt.png
 c1Ticker1: USDT
 c1Token2: /images/flow.png

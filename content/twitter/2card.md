@@ -3,6 +3,7 @@ title: 2card
 header: Earn FLOW
 bgImage: /images/bg-2.png
 cards: "twoCard"
+aprType: APR
 c1Token1: /images/atom.png
 c1Ticker1: ATOM
 c1Token2: /images/flow.png

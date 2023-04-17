@@ -3,6 +3,7 @@ title: INJ/NOTE
 header: Provide Liquidity and Earn FLOW
 bgImage: /images/bg-2.png
 cards: "oneCard"
+aprType: APR
 c1Token1: /images/inj.png
 c1Ticker1: FLOW
 c1Token2: /images/note.png
