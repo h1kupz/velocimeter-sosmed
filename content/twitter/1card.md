@@ -3,7 +3,7 @@ title: 1card
 header: YieldFarming Index x Velocimeter
 bgImage: /images/bg-2.png
 cards: oneCard
-c1Token1: /images/l1v2_transparent.webp
+c1Token1: /images/l1v2_transparent-1-.webp
 c1Ticker1: ATOM
 c1Token2: /images/note.png
 c1Ticker2: YFX
