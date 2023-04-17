@@ -89,3 +89,61 @@ collections:
       - { label: Card 3 Apr, name: c3Apr, widget: string }
 
       - { label: Body, name: body, widget: markdown, required: true }
+
+  - label: "Matched Bribe"
+    name: "bribe-matching"
+    folder: "content/bribe-matching"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
+          label: "Partner",
+          name: "partner",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
+          label: "Partner Bribe Token",
+          name: "token1",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Partner Bribe Amount, name: t1Amount, widget: string }
+      - { label: Partner Bribe Token, name: t1Ticker, widget: string }
+      - {
+          label: "Velocimeter Bribe Token",
+          name: "token2",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Velocimeter Bribe Amount, name: t2Amount, widget: string }
+      - { label: Velocimeter Bribe Token, name: t2Ticker, widget: string }
+      - {
+          label: "Pair Token 1",
+          name: "pt1",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Pair Ticker 1, name: pt1Ticker, widget: string }
+      - {
+          label: "Pair Token 2",
+          name: "pt2",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Pair Ticker 2, name: pt2Ticker, widget: string }
+
+      - { label: Body, name: body, widget: markdown, required: true }

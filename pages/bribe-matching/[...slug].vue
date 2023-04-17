@@ -5,49 +5,55 @@
         <div
           bgImage
           :style="{ backgroundImage: 'url(' + doc.bgImage + ')' }"
-          class="w-[1200px] h-[675px] p-10 mx-auto flex flex-col items-center justify-center"
+          class="w-[1200px] h-[675px] p-6 pb-10 mx-auto flex flex-col items-center justify-center"
         >
-          <div class="flex items-center">
-            <img src="/images/OpenXswap_gray.png" alt="" class="h-12" />
-            <img src="/assets/handshake.png" alt="" class="h-11 mx-4" />
-            <img src="/assets/Velocimeter-lg.png" alt="" class="h-6" />
+          <div class="flex items-center mb-auto">
+            <img :src="doc.partner" alt="" class="h-16" />
+            <img src="/assets/handshake.png" alt="" class="h-8 mx-4 mt-1" />
+            <img src="/assets/Velocimeter-lg.png" alt="" class="h-5" />
           </div>
-          <div class="flex gap-5 mt-8 my-auto mx-44" id="cards">
-            <div v-if="doc.c1Token1">
-              <Card
-                :Cards="doc.cards"
-                :AprType="doc.aprType"
-                :Token1="doc.c1Token1"
-                :Ticker1="doc.c1Ticker1"
-                :Token2="doc.c1Token2"
-                :Ticker2="doc.c1Ticker2"
-                :Apr="doc.c1Apr"
+          <div class="flex mt-12">
+            <div>
+              <img
+                :src="doc.token1"
+                alt=""
+                class="w-[240px] h-[240px] drop-shadow-v z-50 bg-background rounded-full mx-auto"
               />
+              <h2 class="text-center text-5xl mt-6">{{ doc.t1Amount }}</h2>
+              <h3 class="text-center mt-4">${{ doc.t1Ticker }}</h3>
             </div>
-            <div v-if="doc.c2Token1">
-              <Card
-                :Cards="doc.cards"
-                :AprType="doc.aprType"
-                :Token1="doc.c2Token1"
-                :Ticker1="doc.c2Ticker1"
-                :Token2="doc.c2Token2"
-                :Ticker2="doc.c2Ticker2"
-                :Apr="doc.c2Apr"
-              />
+            <div class="flex flex-col items-center">
+              <h5
+                class="text-vgreen uppercase tracking-wider border-y-2 border-dashed border-vgreen py-4 mb-12"
+              >
+                Bribe Matched
+              </h5>
+              <img src="/assets/Arrow.png" alt="" class="w-80 mt-2" />
+              <div class="flex mt-2">
+                <img
+                  :src="doc.pt1"
+                  alt=""
+                  class="w-[80px] h-[80px] drop-shadow-v z-50 bg-background rounded-full"
+                />
+                <img
+                  :src="doc.pt2"
+                  alt=""
+                  class="w-[80px] h-[80px] mr-auto -ml-8 drop-shadow-v bg-background rounded-full"
+                />
+              </div>
+              <h3 class="mt-4">{{ doc.pt1Ticker }}/{{ doc.pt2Ticker }}</h3>
             </div>
-            <div v-if="doc.c3Token1">
-              <Card
-                :Cards="doc.cards"
-                :AprType="doc.aprType"
-                :Token1="doc.c3Token1"
-                :Ticker1="doc.c3Ticker1"
-                :Token2="doc.c3Token2"
-                :Ticker2="doc.c3Ticker2"
-                :Apr="doc.c3Apr"
+            <div>
+              <img
+                :src="doc.token2"
+                alt=""
+                class="w-[240px] h-[240px] mr-auto drop-shadow-v bg-background rounded-full mx-auto"
               />
+              <h2 class="text-center text-5xl mt-6">{{ doc.t2Amount }}</h2>
+              <h3 class="text-center mt-4">${{ doc.t2Ticker }}</h3>
             </div>
           </div>
-          <div class="flex w-full" id="footer">
+          <div class="flex w-full mt-auto" id="footer">
             <h5 class="w-full ml-28 text-center mt-auto">velocimeter.xyz</h5>
             <img
               src="/assets/V.png"

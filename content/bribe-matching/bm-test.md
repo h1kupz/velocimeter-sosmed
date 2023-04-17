@@ -1,19 +1,17 @@
 ---
 title: bm-test
-header: YieldFarming Index x Velocimeter
 bgImage: /images/bg-1.png
-cards: oneCard
-aprType: Projected APR
-c1Token1: /images/l1v2_transparent-1-2-.png
-c1Ticker1: ATOM
-c1Token2: /images/note.png
-c1Ticker2: YFX
-c1Apr: "450"
-c2Token1:
-c2Ticker1: wBTC
-c2Token2: /images/multiBTC.png
-c2Ticker2: multiBTC
-c2Apr: "43"
+partner: /images/OpenXswap_gray.png
+token1: /images/atom.png
+t1Amount: 460
+t1Ticker: ATOM
+token2: /images/flow.png
+t2Amount: 420,000
+t2Ticker: FLOW
+pt1: /images/atom.png
+pt1Ticker: ATOM
+pt2: /images/usdt.png
+pt2Ticker: USDT
 ---
 
-# d
+#
