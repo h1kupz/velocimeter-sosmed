@@ -11,9 +11,9 @@ media_folder: public/images
 public_folder: /images
 
 collections:
-  - label: "Twitter"
-    name: "twitter"
-    folder: "content/twitter"
+  - label: "APRs"
+    name: "aprs"
+    folder: "content/aprs"
     format: "frontmatter"
     create: true
     fields:
