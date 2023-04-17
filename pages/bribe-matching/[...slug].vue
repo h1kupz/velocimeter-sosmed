@@ -19,29 +19,39 @@
                 alt=""
                 class="w-[240px] h-[240px] drop-shadow-v z-50 bg-background rounded-full mx-auto"
               />
-              <h2 class="text-center text-5xl mt-6">{{ doc.t1Amount }}</h2>
-              <h3 class="text-center mt-4">${{ doc.t1Ticker }}</h3>
+              <h2 class="text-center text-5xl mt-6 drop-shadow-v">
+                {{ doc.t1Amount }}
+              </h2>
+              <h3 class="text-center mt-4 drop-shadow-v">
+                ${{ doc.t1Ticker }}
+              </h3>
             </div>
             <div class="flex flex-col items-center">
               <h5
-                class="text-vgreen uppercase tracking-wider border-y-2 border-dashed border-vgreen py-4 mb-12"
+                class="text-vgreen uppercase tracking-wider border-y border-vgreen py-3 mb-12 drop-shadow-v"
               >
                 Bribe Matched
               </h5>
-              <img src="/assets/Arrow.png" alt="" class="w-80 mt-2" />
+              <img
+                src="/assets/Arrow.png"
+                alt=""
+                class="w-80 mt-2 drop-shadow-v"
+              />
               <div class="flex mt-2">
                 <img
                   :src="doc.pt1"
                   alt=""
-                  class="w-[80px] h-[80px] drop-shadow-v z-50 bg-background rounded-full"
+                  class="w-[90px] h-[90px] drop-shadow-v z-50 bg-background rounded-full"
                 />
                 <img
                   :src="doc.pt2"
                   alt=""
-                  class="w-[80px] h-[80px] mr-auto -ml-8 drop-shadow-v bg-background rounded-full"
+                  class="w-[90px] h-[90px] mr-auto -ml-3 drop-shadow-v bg-background rounded-full"
                 />
               </div>
-              <h3 class="mt-4">{{ doc.pt1Ticker }}/{{ doc.pt2Ticker }}</h3>
+              <h3 class="mt-4 drop-shadow-v">
+                {{ doc.pt1Ticker }}/{{ doc.pt2Ticker }}
+              </h3>
             </div>
             <div>
               <img
@@ -49,8 +59,12 @@
                 alt=""
                 class="w-[240px] h-[240px] mr-auto drop-shadow-v bg-background rounded-full mx-auto"
               />
-              <h2 class="text-center text-5xl mt-6">{{ doc.t2Amount }}</h2>
-              <h3 class="text-center mt-4">${{ doc.t2Ticker }}</h3>
+              <h2 class="text-center text-5xl mt-6 drop-shadow-v">
+                {{ doc.t2Amount }}
+              </h2>
+              <h3 class="text-center mt-4 drop-shadow-v">
+                ${{ doc.t2Ticker }}
+              </h3>
             </div>
           </div>
           <div class="flex w-full mt-auto" id="footer">

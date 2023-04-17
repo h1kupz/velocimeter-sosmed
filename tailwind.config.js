@@ -47,6 +47,7 @@ module.exports = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         roboto: ["Roboto Mono", "mono", "serif"],
+        monument: ["monument", "sans-serif"],
       },
       backdropBlur: {
         v: "3px",
