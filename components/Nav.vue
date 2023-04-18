@@ -19,6 +19,19 @@
           </ul>
         </div>
         <div class="dropdown relative w-fit">
+          <button class="dropdown-btn">Partnership</button>
+          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
+            <li
+              :data="partnership"
+              v-for="partner of partnership"
+              :key="partner.slug"
+              class="dropdown-item"
+            >
+              <NuxtLink :to="partner._path">{{ partner.title }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown relative w-fit">
           <button class="dropdown-btn">Matched Bribe</button>
           <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
             <li
@@ -52,6 +65,9 @@
 <script setup>
 const { data: aprs } = await useAsyncData("aprs", () => {
   return queryContent("/aprs").sort({ order: 1 }).find();
+});
+const { data: partnership } = await useAsyncData("partnership", () => {
+  return queryContent("/partnership").sort({ order: 1 }).find();
 });
 const { data: bribematching } = await useAsyncData("bribematching", () => {
   return queryContent("/bribe-matching").sort({ order: 1 }).find();

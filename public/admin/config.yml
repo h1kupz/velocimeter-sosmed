@@ -90,6 +90,30 @@ collections:
 
       - { label: Body, name: body, widget: markdown, required: true }
 
+  - label: "Partnership"
+    name: "partnership"
+    folder: "content/partnership"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: "Small Partner Logo",
+          name: "tPartner",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
+          label: "Large Partner Logo",
+          name: "mPartner",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+
+      - { label: Body, name: body, widget: markdown, required: true }
+
   - label: "Matched Bribe"
     name: "bribe-matching"
     folder: "content/bribe-matching"
