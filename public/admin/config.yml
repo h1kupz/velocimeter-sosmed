@@ -97,6 +97,17 @@ collections:
     create: true
     fields:
       - { label: Title, name: title, widget: string }
+      - label: "Template"
+        name: "template"
+        widget: "select"
+        options: ["one", "two"]
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
       - {
           label: "Small Partner Logo",
           name: "tPartner",
