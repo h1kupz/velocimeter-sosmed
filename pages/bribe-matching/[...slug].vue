@@ -10,7 +10,11 @@
         >
           <div class="flex items-center">
             <img :src="doc.partner" alt="" class="h-16 drop-shadow-v" />
-            <img src="/assets/handshake.png" alt="" class="h-8 mx-4 mt-1" />
+            <img
+              src="/assets/handshake.png"
+              alt=""
+              class="h-8 ml-5 mr-1 mt-1"
+            />
             <img
               v-if="doc.vLogo === 'V'"
               src="/assets/V.png"
