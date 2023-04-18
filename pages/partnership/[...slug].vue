@@ -40,7 +40,7 @@
             <img
               :src="doc.mPartner"
               alt=""
-              class="w-[700px] mx-auto drop-shadow-v"
+              class="w-[600px] mx-auto drop-shadow-v"
             />
 
             <img
