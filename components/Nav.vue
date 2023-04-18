@@ -4,22 +4,6 @@
       <NuxtLink to="/"
         ><img src="/assets/V.png" alt="" class="w-8 mr-4"
       /></NuxtLink>
-      <!-- <ul>
-        <li><h4 class="mt-[2px] text-vgreen">APRs</h4></li>
-        <li :data="aprs" v-for="apr of aprs" :key="apr.slug">
-          <NuxtLink :to="apr._path">{{ apr.title }}</NuxtLink>
-        </li>
-      </ul>
-      <ul class="mt-1">
-        <li><h4 class="mt-[2px] text-vgreen">Bribe Matching</h4></li>
-        <li
-          :data="bribematching"
-          v-for="bribematch of bribematching"
-          :key="bribematch.slug"
-        >
-          <NuxtLink :to="bribematch._path">{{ bribematch.title }}</NuxtLink>
-        </li>
-      </ul> -->
       <div class="dropdown relative w-fit">
         <button class="dropdown-btn">APRs</button>
         <ul class="dropdown-menu absolute -left-3 text-left w-full hidden">
