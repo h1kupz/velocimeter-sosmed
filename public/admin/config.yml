@@ -169,6 +169,6 @@ collections:
           required: true,
         }
       - { label: Epoch, name: epoch, widget: string }
-      - { label: Total, name: total, widget: number }
+      - { label: Total, name: total, widget: string }
 
       - { label: Body, name: body, widget: markdown, required: true }
