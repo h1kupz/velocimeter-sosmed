@@ -111,6 +111,11 @@ collections:
           choose_url: true,
           required: true,
         }
+      - label: "Velocimeter Logo"
+        name: "vLogo"
+        widget: "select"
+        options: ["V", "Velocimeter"]
+      - { label: Total Bribe Amount, name: total, widget: string }
       - {
           label: "Partner Bribe Token",
           name: "token1",
@@ -145,5 +150,6 @@ collections:
           required: true,
         }
       - { label: Pair Ticker 2, name: pt2Ticker, widget: string }
+      - { label: Projected Apr, name: pApr, widget: string }
 
       - { label: Body, name: body, widget: markdown, required: true }

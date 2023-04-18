@@ -5,14 +5,25 @@
         <div
           bgImage
           :style="{ backgroundImage: 'url(' + doc.bgImage + ')' }"
-          class="w-[1200px] h-[675px] p-6 pb-10 mx-auto flex flex-col items-center justify-center"
+          class="w-[1200px] h-[675px] p-6 pb-10 mx-auto flex flex-col items-center justify-center relative"
         >
-          <div class="flex items-center mb-auto">
-            <img :src="doc.partner" alt="" class="h-16" />
+          <div class="flex items-center">
+            <img :src="doc.partner" alt="" class="h-16 drop-shadow-v" />
             <img src="/assets/handshake.png" alt="" class="h-8 mx-4 mt-1" />
-            <img src="/assets/Velocimeter-lg.png" alt="" class="h-5" />
+            <img
+              v-if="doc.vLogo === 'V'"
+              src="/assets/V.png"
+              alt=""
+              class="h-16 drop-shadow-v"
+            />
+            <img
+              v-if="doc.vLogo === 'Velocimeter'"
+              src="/assets/Velocimeter-lg.png"
+              alt=""
+              class="h-5"
+            />
           </div>
-          <div class="flex mt-12">
+          <div class="flex my-auto">
             <div>
               <img
                 :src="doc.token1"
@@ -28,10 +39,21 @@
             </div>
             <div class="flex flex-col items-center">
               <h5
-                class="text-vgreen uppercase tracking-wider border-y border-vgreen py-3 mb-12 drop-shadow-v"
+                class="text-vgreen uppercase tracking-wider border-y border-vgreen py-3 mb-3 drop-shadow-v"
               >
                 Bribe Matched
               </h5>
+              <template v-if="doc.total">
+                <h3 :class="{ 'text-vgreen mb-3 drop-shadow-v': true }">
+                  TOTAL: {{ doc.total }}
+                </h3>
+              </template>
+              <template v-else>
+                <h3 class="mb-3" style="visibility: hidden">
+                  TOTAL:
+                  <span style="visibility: hidden">{{ doc.total }}</span>
+                </h3>
+              </template>
               <img
                 src="/assets/Arrow.png"
                 alt=""
@@ -52,6 +74,9 @@
               <h3 class="mt-4 drop-shadow-v">
                 {{ doc.pt1Ticker }}/{{ doc.pt2Ticker }}
               </h3>
+              <h4 v-if="doc.pApr" class="mt-1 drop-shadow-v">
+                Projected APR: {{ doc.pApr }}%
+              </h4>
             </div>
             <div>
               <img
@@ -67,14 +92,7 @@
               </h3>
             </div>
           </div>
-          <div class="flex w-full mt-auto" id="footer">
-            <h5 class="w-full ml-28 text-center mt-auto">velocimeter.xyz</h5>
-            <img
-              src="/assets/V.png"
-              alt=""
-              class="w-36 -mr-8 -mb-8 ml-auto mt-auto bg-circle rounded-full p-8"
-            />
-          </div>
+          <CardFooter />
         </div>
       </div>
     </ContentDoc>
