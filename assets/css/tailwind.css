@@ -28,19 +28,19 @@
     @apply layout prose;
   }
   h1 {
-    @apply text-4xl font-semibold tracking-wide leading-none;
+    @apply text-4xl font-semibold tracking-wide leading-none drop-shadow-v;
   }
   h2 {
-    @apply text-7xl font-bold leading-none mb-2;
+    @apply text-7xl font-bold leading-none mb-2 drop-shadow-v;
   }
   h3 {
-    @apply text-3xl font-semibold tracking-wider leading-none mb-1;
+    @apply text-3xl font-semibold tracking-wider leading-none mb-1 drop-shadow-v;
   }
   h4 {
-    @apply text-xl font-semibold leading-none mt-4 mb-2;
+    @apply text-xl font-semibold leading-none mt-4 mb-2  drop-shadow-v;
   }
   h5 {
-    @apply font-roboto text-3xl tracking-wide leading-none;
+    @apply font-roboto text-3xl tracking-wide leading-none drop-shadow-v;
   }
   ul {
     @apply flex gap-3 text-sm;
@@ -71,7 +71,7 @@
     @apply w-[1200px] h-[675px] overflow-hidden drop-shadow-v;
   }
   .tweet-background {
-    @apply w-[1200px] h-[675px] p-6 pb-10 mx-auto flex flex-col items-center justify-center relative;
+    @apply w-[1200px] h-[675px] p-10 pb-24 mx-auto flex flex-col items-center justify-center relative;
   }
 }
 

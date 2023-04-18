@@ -31,6 +31,19 @@
             </li>
           </ul>
         </div>
+        <div class="dropdown relative w-fit">
+          <button class="dropdown-btn">Total Bribes</button>
+          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
+            <li
+              :data="totalbribes"
+              v-for="totalbribe of totalbribes"
+              :key="totalbribe.slug"
+              class="dropdown-item"
+            >
+              <NuxtLink :to="totalbribe._path">{{ totalbribe.title }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </ContentNavigation>
   </div>
@@ -43,6 +56,9 @@ const { data: aprs } = await useAsyncData("aprs", () => {
 const { data: bribematching } = await useAsyncData("bribematching", () => {
   return queryContent("/bribe-matching").sort({ order: 1 }).find();
 });
+const { data: totalbribes } = await useAsyncData("totalbribes", () => {
+  return queryContent("/total-bribes").sort({ order: 1 }).find();
+});
 </script>
 
 <style scoped>
@@ -50,7 +66,7 @@ const { data: bribematching } = await useAsyncData("bribematching", () => {
   @apply font-bold text-vgreen underline underline-offset-8 decoration-2 hover:text-vgreen trans;
 }
 .dropdown-btn {
-  @apply text-xs font-semibold text-background uppercase tracking-wide bg-vgreen rounded-md px-3 py-1 hover:bg-vgreen/70 trans drop-shadow-v;
+  @apply text-xs font-semibold text-background uppercase tracking-wide bg-vgreen rounded-md px-2 py-1 hover:bg-vgreen/70 trans drop-shadow-v;
 }
 .dropdown:hover .dropdown-menu {
   @apply block w-full trans;

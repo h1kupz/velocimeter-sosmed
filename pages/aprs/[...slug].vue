@@ -6,17 +6,17 @@
         <div
           bgImage
           :style="{ backgroundImage: 'url(' + doc.bgImage + ')' }"
-          class="w-[1200px] h-[675px] p-10 mx-auto flex flex-col items-center justify-center"
+          class="tweet-background"
         >
           <img
             src="/assets/Velocimeter-lg.png"
             alt=""
-            class="w-80 mr-auto mb-4"
+            class="w-80 mr-auto mb-4 drop-shadow-v"
           />
           <h1 class="mr-auto mb-auto text-left">
             {{ doc.header }}
           </h1>
-          <div class="flex gap-5 mt-8 my-auto mx-44" id="cards">
+          <div class="flex gap-5 items-center h-full" id="cards">
             <div v-if="doc.c1Token1">
               <Card
                 :Cards="doc.cards"
@@ -51,14 +51,7 @@
               />
             </div>
           </div>
-          <div class="flex w-full" id="footer">
-            <h5 class="w-full ml-28 text-center mt-auto">velocimeter.xyz</h5>
-            <img
-              src="/assets/V.png"
-              alt=""
-              class="w-36 -mr-8 -mb-8 ml-auto mt-auto bg-circle rounded-full p-8"
-            />
-          </div>
+          <TweetFooter />
         </div>
         <!-- End Tweet Content -->
       </Tweet>

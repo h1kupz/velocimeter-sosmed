@@ -153,3 +153,22 @@ collections:
       - { label: Projected Apr, name: pApr, widget: string }
 
       - { label: Body, name: body, widget: markdown, required: true }
+
+  - label: "Total Bribes"
+    name: "totalbribes"
+    folder: "content/total-bribes"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Epoch, name: epoch, widget: string }
+      - { label: Total, name: total, widget: number }
+
+      - { label: Body, name: body, widget: markdown, required: true }
