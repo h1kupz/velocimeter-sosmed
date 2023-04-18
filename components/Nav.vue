@@ -1,37 +1,39 @@
 <template>
-  <ContentNavigation v-slot="{ navigation }">
-    <div class="layout gap-1">
-      <NuxtLink to="/"
-        ><img src="/assets/V.png" alt="" class="w-8 mr-4"
-      /></NuxtLink>
-      <div class="dropdown relative w-fit">
-        <button class="dropdown-btn">APRs</button>
-        <ul class="dropdown-menu absolute -left-3 text-left w-full hidden">
-          <li
-            :data="aprs"
-            v-for="apr of aprs"
-            :key="apr.slug"
-            class="dropdown-item"
-          >
-            <NuxtLink :to="apr._path">{{ apr.title }}</NuxtLink>
-          </li>
-        </ul>
+  <div class="mb-auto">
+    <ContentNavigation v-slot="{ navigation }">
+      <div class="layout gap-1">
+        <NuxtLink to="/"
+          ><img src="/assets/V.png" alt="" class="w-8 mr-4 drop-shadow-v"
+        /></NuxtLink>
+        <div class="dropdown relative w-fit">
+          <button class="dropdown-btn">APRs</button>
+          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
+            <li
+              :data="aprs"
+              v-for="apr of aprs"
+              :key="apr.slug"
+              class="dropdown-item"
+            >
+              <NuxtLink :to="apr._path">{{ apr.title }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown relative w-fit">
+          <button class="dropdown-btn">Matched Bribe</button>
+          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
+            <li
+              :data="bribematching"
+              v-for="bribematch of bribematching"
+              :key="bribematch.slug"
+              class="dropdown-item"
+            >
+              <NuxtLink :to="bribematch._path">{{ bribematch.title }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="dropdown relative w-fit">
-        <button class="dropdown-btn">Matched Bribe</button>
-        <ul class="dropdown-menu absolute -left-3 text-left w-full hidden">
-          <li
-            :data="bribematching"
-            v-for="bribematch of bribematching"
-            :key="bribematch.slug"
-            class="dropdown-item"
-          >
-            <NuxtLink :to="bribematch._path">{{ bribematch.title }}</NuxtLink>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </ContentNavigation>
+    </ContentNavigation>
+  </div>
 </template>
 
 <script setup>
@@ -45,16 +47,16 @@ const { data: bribematching } = await useAsyncData("bribematching", () => {
 
 <style scoped>
 .router-link-active {
-  @apply font-bold text-vgreen underline underline-offset-8 decoration-2 hover:text-vgreen;
+  @apply font-bold text-vgreen underline underline-offset-8 decoration-2 hover:text-vgreen trans;
 }
 .dropdown-btn {
-  @apply text-sm font-semibold text-background uppercase tracking-wide bg-vgreen rounded-md px-3 py-1;
+  @apply text-xs font-semibold text-background uppercase tracking-wide bg-vgreen rounded-md px-3 py-1 hover:bg-vgreen/70 trans drop-shadow-v;
 }
 .dropdown:hover .dropdown-menu {
-  @apply block w-full;
+  @apply block w-full trans;
 }
 .dropdown-item {
-  @apply pb-4 w-screen px-6 bg-background hover:text-vgreen;
+  @apply w-screen px-3 py-2 bg-background/90 hover:text-vgreen trans;
 }
 
 .dropdown-menu {

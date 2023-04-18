@@ -13,7 +13,7 @@
 
 @layer base {
   body {
-    @apply w-screen overflow-x-hidden bg-background text-text text-right font-inter flex items-center justify-center;
+    @apply w-screen min-h-screen overflow-x-hidden bg-background text-text text-right font-inter flex items-center justify-center bg-[url('/images/bg-2.png')] bg-cover backdrop-blur-v;
   }
   header {
     @apply sticky top-0 layout py-4;
@@ -65,6 +65,13 @@
   }
   .trans {
     @apply transition duration-300 ease-in-out;
+  }
+
+  .tweet-wrapper {
+    @apply w-[1200px] h-[675px] overflow-hidden drop-shadow-v;
+  }
+  .tweet-background {
+    @apply w-[1200px] h-[675px] p-6 pb-10 mx-auto flex flex-col items-center justify-center relative;
   }
 }
 
