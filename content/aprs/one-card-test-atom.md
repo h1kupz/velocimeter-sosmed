@@ -1,5 +1,5 @@
 ---
-title: One card test atom
+title: STRD stATOM-ATOM stATOM-stOSMO
 header: Stride Liquid Staked Assets & $STRD
 bgImage: /images/bg-1.png
 cards: threeCard
