@@ -31,7 +31,7 @@
           class="w-[125px] h-[125px] mr-auto -mt-28 -ml-8 drop-shadow-xl bg-background rounded-full"
         />
       </div>
-      <h4>{{ AprType }}:</h4>
+      <h4>~{{ AprType }}:</h4>
       <h2>{{ Apr }}%</h2>
       <h3>{{ Ticker1 }}/{{ Ticker2 }}</h3>
     </div>
