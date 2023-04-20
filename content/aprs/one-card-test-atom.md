@@ -1,6 +1,6 @@
 ---
 title: One card test atom
-header: d
+header: Stride Liquid Staking
 bgImage: /images/bg-1.png
 cards: threeCard
 aprType: APR
