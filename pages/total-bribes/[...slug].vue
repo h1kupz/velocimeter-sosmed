@@ -25,7 +25,7 @@
             <h2
               class="font-monument text-vgreen text-6xl tracking-wider uppercase"
             >
-              Bribes Available
+              In Bribes Available
             </h2>
           </div>
           <TweetFooter />
