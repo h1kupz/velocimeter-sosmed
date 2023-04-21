@@ -60,7 +60,12 @@ collections:
           choose_url: true,
           required: false,
         }
-      - { label: Card 2 Ticker 1, name: c2Ticker1, widget: string }
+      - {
+          label: Card 2 Ticker 1,
+          name: c2Ticker1,
+          widget: string,
+          required: false,
+        }
       - {
           label: "Card 2 Token 2",
           name: "c2Token2",
@@ -68,9 +73,14 @@ collections:
           choose_url: true,
           required: false,
         }
-      - { label: Card 2 Ticker 2, name: c2Ticker2, widget: string }
-      - { label: Card 2 Apr, name: c2Apr, widget: string }
-      - { label: Card 2 Tvl, name: c2Tvl, widget: string }
+      - {
+          label: Card 2 Ticker 2,
+          name: c2Ticker2,
+          widget: string,
+          required: false,
+        }
+      - { label: Card 2 Apr, name: c2Apr, widget: string, required: false }
+      - { label: Card 2 Tvl, name: c2Tvl, widget: string, required: false }
 
       - {
           label: "Card 3 Token 1",
@@ -79,7 +89,12 @@ collections:
           choose_url: true,
           required: false,
         }
-      - { label: Card 3 Ticker 1, name: c3Ticker1, widget: string }
+      - {
+          label: Card 3 Ticker 1,
+          name: c3Ticker1,
+          widget: string,
+          required: false,
+        }
       - {
           label: "Card 3 Token 2",
           name: "c3Token2",
@@ -87,9 +102,14 @@ collections:
           choose_url: true,
           required: false,
         }
-      - { label: Card 3 Ticker 2, name: c3Ticker2, widget: string }
-      - { label: Card 3 Apr, name: c3Apr, widget: string }
-      - { label: Card 3 Tvl, name: c3Tvl, widget: string }
+      - {
+          label: Card 3 Ticker 2,
+          name: c3Ticker2,
+          widget: string,
+          required: false,
+        }
+      - { label: Card 3 Apr, name: c3Apr, widget: string, required: false }
+      - { label: Card 3 Tvl, name: c3Tvl, widget: string, required: false }
 
       - { label: Body, name: body, widget: markdown, required: true }
 
