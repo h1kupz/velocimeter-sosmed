@@ -5,7 +5,7 @@
   <div class="w-full flex justify-center">
     <button
       @click="captureElement"
-      class="bg-vgreen text-background font-medium uppercase hover:bg-vgreen/70 trans rounded-md px-3 py-1 my-4 drop-shadow-v"
+      class="bg-vgreen text-background font-bold text-sm uppercase hover:bg-vgreen/70 trans rounded-md px-3 py-1 my-4 drop-shadow-v"
     >
       Capture Image
     </button>

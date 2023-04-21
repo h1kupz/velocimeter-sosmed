@@ -9,6 +9,7 @@ c1Ticker1: ATOM
 c1Token2: /images/note.png
 c1Ticker2: YFX
 c1Apr: "450"
+c1Tvl: 800,000
 c2Token1:
 c2Ticker1: wBTC
 c2Token2: /images/multiBTC.png
