@@ -31,9 +31,12 @@
           class="w-[125px] h-[125px] mr-auto -mt-28 -ml-8 drop-shadow-xl bg-background rounded-full"
         />
       </div>
-      <h4>~{{ AprType }}:</h4>
+      <h4>~ {{ AprType }}:</h4>
       <h2>{{ Apr }}%</h2>
       <h3>{{ Ticker1 }}/{{ Ticker2 }}</h3>
+      <h4 v-if="Tvl" class="text-sm uppercase mt-3 mb-0 tracking-widest">
+        Current TVL: ~ ${{ Tvl }}
+      </h4>
     </div>
   </div>
 </template>
@@ -65,6 +68,10 @@ const props = defineProps({
     required: false,
   },
   Apr: {
+    type: String,
+    required: false,
+  },
+  Tvl: {
     type: String,
     required: false,
   },

@@ -26,6 +26,7 @@
                 :Token2="doc.c1Token2"
                 :Ticker2="doc.c1Ticker2"
                 :Apr="doc.c1Apr"
+                :Tvl="doc.c1Tvl"
               />
             </div>
             <div v-if="doc.c2Token1">
@@ -37,6 +38,7 @@
                 :Token2="doc.c2Token2"
                 :Ticker2="doc.c2Ticker2"
                 :Apr="doc.c2Apr"
+                :Tvl="doc.c2Tvl"
               />
             </div>
             <div v-if="doc.c3Token1">
@@ -48,6 +50,7 @@
                 :Token2="doc.c3Token2"
                 :Ticker2="doc.c3Ticker2"
                 :Apr="doc.c3Apr"
+                :Tvl="doc.c3Tvl"
               />
             </div>
           </div>
