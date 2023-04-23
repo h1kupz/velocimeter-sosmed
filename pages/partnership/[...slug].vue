@@ -9,9 +9,17 @@
           class="tweet-background pb-10"
         >
           <div v-if="doc.template === 'one'" class="flex items-center gap-4">
-            <img :src="doc.tPartner" alt="" class="h-16 drop-shadow-v" />
-            <img src="/assets/cross.svg" alt="" class="h-5 drop-shadow-v" />
-            <img src="/assets/Velocimeter-lg.png" alt="" class="h-5" />
+            <img :src="doc.tPartner" alt="" class="h-9 drop-shadow-v" />
+            <img
+              src="/assets/cross.svg"
+              alt=""
+              class="h-5 mt-[2px] drop-shadow-v"
+            />
+            <img
+              src="/assets/Velocimeter-lg.png"
+              alt=""
+              class="h-5 drop-shadow-v"
+            />
           </div>
           <div
             v-if="doc.template === 'one'"
@@ -30,7 +38,7 @@
               class="h-24 ml-8 mb-8 drop-shadow-v"
             />
             <div class="flex flex-col items-center justify-center h-full">
-              <img src="/assets/V.svg" alt="" class="h-80 drop-shadow-v" />
+              <img src="/assets/V.svg" alt="" class="h-72 drop-shadow-v" />
             </div>
           </div>
           <div

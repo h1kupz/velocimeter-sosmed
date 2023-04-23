@@ -1,9 +1,9 @@
 ---
 title: stride
-template: two
+template: one
 bgImage: /images/bg-1.png
-tPartner:
-mPartner: /images/stride-logo.svg
+tPartner: /images/stride-logo.svg
+mPartner: /images/stride-s.png
 ---
 
 #
