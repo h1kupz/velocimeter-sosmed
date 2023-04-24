@@ -13,7 +13,7 @@
             alt=""
             class="w-80 mr-auto mb-4 drop-shadow-v"
           />
-          <h1 class="mr-auto mb-auto text-left">
+          <h1 class="w-full mb-auto text-left">
             {{ doc.header }}
           </h1>
           <div class="flex gap-5 items-center h-full" id="cards">
