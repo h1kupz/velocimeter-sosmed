@@ -37,7 +37,7 @@
     @apply text-3xl font-bold tracking-wider leading-none mb-1 drop-shadow-v;
   }
   h4 {
-    @apply text-xl font-bold leading-none mt-4 mb-2  drop-shadow-v;
+    @apply text-xl font-bold uppercase leading-none mt-4 mb-2 drop-shadow-v;
   }
   h5 {
     @apply font-roboto text-3xl tracking-wide leading-none drop-shadow-v;

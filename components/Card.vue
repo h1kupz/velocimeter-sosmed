@@ -34,7 +34,7 @@
       <h4>~{{ AprType }}:</h4>
       <h2>{{ Apr }}%</h2>
       <h3>{{ Ticker1 }}/{{ Ticker2 }}</h3>
-      <h4 v-if="Tvl" class="uppercase mt-3 mb-0 tracking-widest">
+      <h4 v-if="Tvl" class="text-lg mt-2 mb-0 tracking-widest">
         Current TVL: ~${{ Tvl }}
       </h4>
     </div>
