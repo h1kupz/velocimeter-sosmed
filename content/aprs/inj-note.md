@@ -1,23 +1,24 @@
 ---
 title: INJ/NOTE
-header: Provide Liquidity and Earn FLOW
+header: Injective is the fastest PoS layer 1 blockchain. LP $INJ & earn $FLOW
 bgImage: /images/bg-2.png
-cards: "oneCard"
+cards: twoCard
 aprType: APR
 c1Token1: /images/inj.png
-c1Ticker1: FLOW
+c1Ticker1: INJ
 c1Token2: /images/note.png
-c1Ticker2: multiBTC
-c1Apr: 0,000
-c2Token1:
-c2Ticker1:
-c2Token2:
-c2Ticker2:
-c2Apr:
-c3Token1:
-c3Token2:
-c3Apr:
-c3Pair:
+c1Ticker2: NOTE
+c1Apr: "119"
+c1Tvl: 24,000
+c2Token1: /images/flow.png
+c2Token2: /images/inj.png
+c3Token1: null
+c3Token2: null
+c3Pair: null
+c2Ticker1: FLOW
+c2Ticker2: INJ
+c2Apr: "233"
+c2Tvl: 3,500
+c3Apr: null
 ---
-
-#
+# d
