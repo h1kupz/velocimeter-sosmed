@@ -2,7 +2,7 @@
 title: staked eth
 template: one
 bgImage: /images/bg-1.png
-tPartner: /images/twitter_banner-1-.jpg
-mPartner: /images/artboard_14x.png
+tPartner: /images/twitter_banner-1-2-.jpg
+mPartner: /images/wcanto-1-.jpg
 ---
 d
