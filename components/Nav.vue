@@ -19,6 +19,19 @@
           </ul>
         </div>
         <div class="dropdown relative w-fit">
+          <button class="dropdown-btn">TwoCols</button>
+          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
+            <li
+              :data="twocols"
+              v-for="col of twocols"
+              :key="col.slug"
+              class="dropdown-item"
+            >
+              <NuxtLink :to="col._path">{{ col.title }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown relative w-fit">
           <button class="dropdown-btn">Partnership</button>
           <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
             <li
@@ -57,6 +70,21 @@
             </li>
           </ul>
         </div>
+        <div class="dropdown relative w-fit">
+          <button class="dropdown-btn">Announcements</button>
+          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
+            <li
+              :data="announcements"
+              v-for="announcement of announcements"
+              :key="announcement.slug"
+              class="dropdown-item"
+            >
+              <NuxtLink :to="announcement._path">{{
+                announcement.title
+              }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
       </div>
     </ContentNavigation>
   </div>
@@ -66,6 +94,9 @@
 const { data: aprs } = await useAsyncData("aprs", () => {
   return queryContent("/aprs").sort({ order: 1 }).find();
 });
+const { data: twocols } = await useAsyncData("twocols", () => {
+  return queryContent("/twocols").sort({ order: 1 }).find();
+});
 const { data: partnership } = await useAsyncData("partnership", () => {
   return queryContent("/partnership").sort({ order: 1 }).find();
 });
@@ -74,6 +105,9 @@ const { data: bribematching } = await useAsyncData("bribematching", () => {
 });
 const { data: totalbribes } = await useAsyncData("totalbribes", () => {
   return queryContent("/total-bribes").sort({ order: 1 }).find();
+});
+const { data: announcements } = await useAsyncData("announcements", () => {
+  return queryContent("/announcements").sort({ order: 1 }).find();
 });
 </script>
 

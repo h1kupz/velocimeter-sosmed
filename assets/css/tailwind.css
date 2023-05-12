@@ -27,6 +27,14 @@
   main {
     @apply layout prose;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    @apply drop-shadow-v;
+  }
   h1 {
     @apply text-4xl font-semibold tracking-wide leading-none drop-shadow-v;
   }
@@ -71,7 +79,7 @@
     @apply w-[1200px] h-[675px] overflow-hidden drop-shadow-v;
   }
   .tweet-background {
-    @apply w-[1200px] h-[675px] p-10 pb-24 mx-auto flex flex-col items-center justify-center relative;
+    @apply w-[1200px] h-[675px] p-6 pb-24 mx-auto flex flex-col items-center justify-center relative;
   }
 }
 
