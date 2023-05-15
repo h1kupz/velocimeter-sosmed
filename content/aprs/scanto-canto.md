@@ -17,9 +17,9 @@ c2Ticker2: CANTO
 c2Apr: "100"
 c2Tvl: 500,000
 c3Token1: /images/wcanto-1-.jpg
-c3Ticker1: AGG
+c3Ticker1: sCANTO
 c3Token2: /images/original-icon-transparent.png
-c3Ticker2: CANTO
+c3Ticker2: AGG
 c3Apr: "800"
 c3Tvl: 30,000
 ---
