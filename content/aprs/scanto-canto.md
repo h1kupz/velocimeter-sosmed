@@ -1,6 +1,6 @@
 ---
 title: Liquid Staked CANTO Is Live On Velocimeter w/ $BLOTR Bribes Coming This Epoch
-header: sCANTO-CANTO
+header: Liquid Staked CANTO Is Live On Velocimeter w/ $BLOTR Bribes Coming This Epoch
 bgImage: /images/bg-1.png
 cards: threeCard
 aprType: Projected APR
