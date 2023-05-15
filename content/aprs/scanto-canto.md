@@ -1,5 +1,5 @@
 ---
-title: sCANTO-CANTO
+title: Liquid Staked CANTO Is Live On Velocimeter w/ $BLOTR Bribes Coming This Epoch
 header: sCANTO-CANTO
 bgImage: /images/bg-1.png
 cards: threeCard
