@@ -1,5 +1,5 @@
 ---
-title: $BLOTR
+title: $BLOTR pool
 header: $BLOTR is the Gov Token for the $sCANTO LSD.  Ushering in the CANTO
   Summer Of Love 🤑
 bgImage: /images/bg-2.png
