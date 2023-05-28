@@ -1,6 +1,6 @@
 ---
 title: oBLOTR Multi Rewards
-header: Earn CANTO + FLOW + oBLOTR
+header: Earn CANTO + FLOW + oBLOTR (combined APR 934.6%)
 bgImage: /images/bg-1.png
 Token1: /images/flow.png
 Ticker1: FLOW
