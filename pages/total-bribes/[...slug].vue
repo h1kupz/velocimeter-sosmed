@@ -23,7 +23,7 @@
               ${{ doc.total }}
             </h1>
             <h2
-              class="font-monument text-vgreen text-6xl tracking-wider uppercase"
+              class="font-monument text-vgreen text-6xl tracking-wider uppercase mb-0"
             >
               In Bribes Available
             </h2>

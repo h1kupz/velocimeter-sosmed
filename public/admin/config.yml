@@ -230,3 +230,66 @@ collections:
       - { label: Total, name: total, widget: string }
 
       - { label: Body, name: body, widget: markdown, required: true }
+
+  - label: "Multi Rewards"
+    name: "multirewards"
+    folder: "content/multi-rewards"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Header, name: header, widget: string }
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
+          label: "Pair Token 1",
+          name: "Token1",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - { label: Pair Ticker 1, name: Ticker1, widget: string, required: false }
+      - {
+          label: "Pair Token 2",
+          name: "Token2",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - { label: Pair Ticker 2, name: Ticker2, widget: string, required: false }
+      - { label: Message, name: Message, widget: string }
+      - {
+          label: "Reward Token 1",
+          name: "r1Token",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - { label: Reward Apr 1, name: r1Apr, widget: string, required: false }
+      - {
+          label: Reward Ticker 1,
+          name: r1Ticker,
+          widget: string,
+          required: false,
+        }
+      - {
+          label: "Reward Token 2",
+          name: "r2Token",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - { label: Reward Apr 2, name: r2Apr, widget: string, required: false }
+      - {
+          label: Reward Ticker 2,
+          name: r2Ticker,
+          widget: string,
+          required: false,
+        }
+
+      - { label: Body, name: body, widget: markdown, required: true }

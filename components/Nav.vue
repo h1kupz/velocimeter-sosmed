@@ -71,6 +71,21 @@
           </ul>
         </div>
         <div class="dropdown relative w-fit">
+          <button class="dropdown-btn">Multi Rewards</button>
+          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
+            <li
+              :data="multirewards"
+              v-for="multireward of multirewards"
+              :key="multireward.slug"
+              class="dropdown-item"
+            >
+              <NuxtLink :to="multireward._path">{{
+                multireward.title
+              }}</NuxtLink>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdown relative w-fit">
           <button class="dropdown-btn">Announcements</button>
           <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
             <li
@@ -105,6 +120,9 @@ const { data: bribematching } = await useAsyncData("bribematching", () => {
 });
 const { data: totalbribes } = await useAsyncData("totalbribes", () => {
   return queryContent("/total-bribes").sort({ order: 1 }).find();
+});
+const { data: multirewards } = await useAsyncData("multirewards", () => {
+  return queryContent("/multi-rewards").sort({ order: 1 }).find();
 });
 const { data: announcements } = await useAsyncData("announcements", () => {
   return queryContent("/announcements").sort({ order: 1 }).find();
