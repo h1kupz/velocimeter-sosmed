@@ -11,7 +11,7 @@ media_folder: public/images
 public_folder: /images
 
 collections:
-  - label: "APRs"
+  - label: "Canto: APRs"
     name: "aprs"
     folder: "content/canto/aprs"
     format: "frontmatter"
@@ -113,7 +113,7 @@ collections:
 
       - { label: Body, name: body, widget: markdown, required: true }
 
-  - label: "Partnership"
+  - label: "Canto: Partnership"
     name: "partnership"
     folder: "content/canto/partnership"
     format: "frontmatter"
@@ -148,7 +148,7 @@ collections:
 
       - { label: Body, name: body, widget: markdown, required: true }
 
-  - label: "Matched Bribe"
+  - label: "Canto: Matched Bribe"
     name: "bribe-matching"
     folder: "content/canto/bribe-matching"
     format: "frontmatter"
@@ -212,7 +212,7 @@ collections:
 
       - { label: Body, name: body, widget: markdown, required: true }
 
-  - label: "Total Bribes"
+  - label: "Canto: Total Bribes"
     name: "totalbribes"
     folder: "content/canto/total-bribes"
     format: "frontmatter"
@@ -231,7 +231,7 @@ collections:
 
       - { label: Body, name: body, widget: markdown, required: true }
 
-  - label: "Multi Rewards"
+  - label: "Canto: Multi Rewards"
     name: "multirewards"
     folder: "content/canto/multi-rewards"
     format: "frontmatter"

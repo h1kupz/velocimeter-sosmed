@@ -36,7 +36,7 @@
     @apply drop-shadow-v;
   }
   h1 {
-    @apply text-4xl font-semibold tracking-wide leading-none drop-shadow-v;
+    @apply text-4xl font-bold tracking-wide leading-tight drop-shadow-v;
   }
   h2 {
     @apply text-7xl font-extrabold leading-none mb-2 drop-shadow-v;
@@ -112,7 +112,7 @@
     circle,
     rgba(0, 0, 0, 0.5) 0%,
     rgba(0, 0, 0, 0.3) 30%,
-    rgba(0, 0, 0, 0) 80%
+    rgba(0, 0, 0, 0) 60%
   );
 }
 

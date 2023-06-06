@@ -3,7 +3,7 @@
     <img
       src="/images/PulseLogoVector.svg"
       alt=""
-      class="w-28 mr-auto mt-auto rounded-full p-4 ml-8 mb-3 drop-shadow-v"
+      class="w-28 mr-auto mt-auto rounded-full p-6 ml-6 drop-shadow-v"
     />
     <h5 class="text-center mt-auto mb-8 drop-shadow-v text-2xl">
       pulse.velocimeter.xyz
@@ -11,7 +11,7 @@
     <img
       src="/assets/V.png"
       alt=""
-      class="w-28 ml-auto mt-auto bg-circle-dark rounded-full p-2 py-3 mr-8 mb-3 drop-shadow-v"
+      class="w-24 ml-auto mt-auto bg-circle-dark rounded-full p-3 mr-8 mb-3 drop-shadow-v"
     />
   </div>
 </template>
