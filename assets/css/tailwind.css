@@ -50,8 +50,11 @@
   h5 {
     @apply font-roboto text-3xl tracking-wide leading-none drop-shadow-v;
   }
+  h6 {
+    @apply font-roboto text-vgreen-light text-xl tracking-wide leading-none drop-shadow-v;
+  }
   ul {
-    @apply flex gap-3 text-sm;
+    @apply flex text-sm;
   }
 }
 
@@ -107,8 +110,8 @@
   background: rgb(0, 0, 0);
   background: radial-gradient(
     circle,
-    rgba(0, 0, 0, 0.2) 10%,
-    rgba(0, 0, 0, 0.4) 20%,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.3) 30%,
     rgba(0, 0, 0, 0) 80%
   );
 }

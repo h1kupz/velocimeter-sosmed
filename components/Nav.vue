@@ -2,101 +2,33 @@
   <div class="mb-auto">
     <ContentNavigation v-slot="{ navigation }">
       <div class="layout gap-1">
-        <NuxtLink to="/"
-          ><img src="/assets/V.png" alt="" class="w-8 mr-4 drop-shadow-v"
-        /></NuxtLink>
-        <div class="dropdown relative w-fit">
-          <button class="dropdown-btn">APRs</button>
+        <NuxtLink to="/">
+          <img src="/assets/V.png" alt="" class="w-8 mr-4 drop-shadow-v" />
+        </NuxtLink>
+        <div
+          v-for="link of navigation"
+          :key="link._path"
+          class="dropdown relative w-fit"
+        >
+          <button class="dropdown-btn">{{ link.title }}</button>
           <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
             <li
-              :data="aprs"
-              v-for="apr of aprs"
-              :key="apr.slug"
-              class="dropdown-item"
+              v-for="childLink of link.children"
+              :key="childLink._path"
+              class="w-screen px-3 py-2 bg-background/80"
             >
-              <NuxtLink :to="apr._path">{{ apr.title }}</NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown relative w-fit">
-          <button class="dropdown-btn">TwoCols</button>
-          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
-            <li
-              :data="twocols"
-              v-for="col of twocols"
-              :key="col.slug"
-              class="dropdown-item"
-            >
-              <NuxtLink :to="col._path">{{ col.title }}</NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown relative w-fit">
-          <button class="dropdown-btn">Partnership</button>
-          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
-            <li
-              :data="partnership"
-              v-for="partner of partnership"
-              :key="partner.slug"
-              class="dropdown-item"
-            >
-              <NuxtLink :to="partner._path">{{ partner.title }}</NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown relative w-fit">
-          <button class="dropdown-btn">Matched Bribe</button>
-          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
-            <li
-              :data="bribematching"
-              v-for="bribematch of bribematching"
-              :key="bribematch.slug"
-              class="dropdown-item"
-            >
-              <NuxtLink :to="bribematch._path">{{ bribematch.title }}</NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown relative w-fit">
-          <button class="dropdown-btn">Total Bribes</button>
-          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
-            <li
-              :data="totalbribes"
-              v-for="totalbribe of totalbribes"
-              :key="totalbribe.slug"
-              class="dropdown-item"
-            >
-              <NuxtLink :to="totalbribe._path">{{ totalbribe.title }}</NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown relative w-fit">
-          <button class="dropdown-btn">Multi Rewards</button>
-          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
-            <li
-              :data="multirewards"
-              v-for="multireward of multirewards"
-              :key="multireward.slug"
-              class="dropdown-item"
-            >
-              <NuxtLink :to="multireward._path">{{
-                multireward.title
-              }}</NuxtLink>
-            </li>
-          </ul>
-        </div>
-        <div class="dropdown relative w-fit">
-          <button class="dropdown-btn">Announcements</button>
-          <ul class="dropdown-menu absolute top-4 text-left w-full hidden">
-            <li
-              :data="announcements"
-              v-for="announcement of announcements"
-              :key="announcement.slug"
-              class="dropdown-item"
-            >
-              <NuxtLink :to="announcement._path">{{
-                announcement.title
-              }}</NuxtLink>
+              <ul class="flex flex-col">
+                <p class="uppercase font-bold mb-1">{{ childLink.title }}</p>
+                <li
+                  v-for="subChildLink of childLink.children"
+                  :key="subChildLink._path"
+                  class="dropdown-item"
+                >
+                  <NuxtLink :to="subChildLink._path">{{
+                    subChildLink.title
+                  }}</NuxtLink>
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -104,30 +36,6 @@
     </ContentNavigation>
   </div>
 </template>
-
-<script setup>
-const { data: aprs } = await useAsyncData("aprs", () => {
-  return queryContent("/aprs").sort({ order: 1 }).find();
-});
-const { data: twocols } = await useAsyncData("twocols", () => {
-  return queryContent("/twocols").sort({ order: 1 }).find();
-});
-const { data: partnership } = await useAsyncData("partnership", () => {
-  return queryContent("/partnership").sort({ order: 1 }).find();
-});
-const { data: bribematching } = await useAsyncData("bribematching", () => {
-  return queryContent("/bribe-matching").sort({ order: 1 }).find();
-});
-const { data: totalbribes } = await useAsyncData("totalbribes", () => {
-  return queryContent("/total-bribes").sort({ order: 1 }).find();
-});
-const { data: multirewards } = await useAsyncData("multirewards", () => {
-  return queryContent("/multi-rewards").sort({ order: 1 }).find();
-});
-const { data: announcements } = await useAsyncData("announcements", () => {
-  return queryContent("/announcements").sort({ order: 1 }).find();
-});
-</script>
 
 <style scoped>
 .router-link-active {

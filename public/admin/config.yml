@@ -13,7 +13,7 @@ public_folder: /images
 collections:
   - label: "APRs"
     name: "aprs"
-    folder: "content/aprs"
+    folder: "content/canto/aprs"
     format: "frontmatter"
     create: true
     fields:
@@ -115,7 +115,7 @@ collections:
 
   - label: "Partnership"
     name: "partnership"
-    folder: "content/partnership"
+    folder: "content/canto/partnership"
     format: "frontmatter"
     create: true
     fields:
@@ -150,7 +150,7 @@ collections:
 
   - label: "Matched Bribe"
     name: "bribe-matching"
-    folder: "content/bribe-matching"
+    folder: "content/canto/bribe-matching"
     format: "frontmatter"
     create: true
     fields:
@@ -214,7 +214,7 @@ collections:
 
   - label: "Total Bribes"
     name: "totalbribes"
-    folder: "content/total-bribes"
+    folder: "content/canto/total-bribes"
     format: "frontmatter"
     create: true
     fields:
@@ -233,7 +233,7 @@ collections:
 
   - label: "Multi Rewards"
     name: "multirewards"
-    folder: "content/multi-rewards"
+    folder: "content/canto/multi-rewards"
     format: "frontmatter"
     create: true
     fields:
