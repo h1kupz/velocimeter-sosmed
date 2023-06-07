@@ -18,7 +18,9 @@
               class="w-screen px-3 py-2 bg-background/80"
             >
               <ul class="flex flex-col">
-                <p class="uppercase font-bold mb-1">{{ childLink.title }}</p>
+                <p class="uppercase font-bold mb-1">
+                  {{ childLink.title }}
+                </p>
                 <li
                   v-for="subChildLink of childLink.children"
                   :key="subChildLink._path"

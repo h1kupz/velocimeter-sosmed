@@ -1,5 +1,5 @@
 ---
-title: INJ/NOTE
+title: Test
 header: Injective is the fastest PoS layer 1 blockchain. LP $INJ & earn $FLOW
 bgImage: /images/bg-5.png
 cards: twoCard

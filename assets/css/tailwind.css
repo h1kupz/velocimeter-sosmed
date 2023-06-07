@@ -84,6 +84,10 @@
   .tweet-background {
     @apply w-[1200px] h-[675px] p-6 pb-24 mx-auto flex flex-col items-center justify-center relative;
   }
+
+  .pulse-bg {
+    @apply p-[2px] rounded-3xl bg-gradient-to-b from-[#01b9f6] via-[#215cf6] to-[#f10732] drop-shadow-v;
+  }
 }
 
 .oneCard {

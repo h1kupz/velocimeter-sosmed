@@ -1,5 +1,5 @@
 ---
-title: Pulse
+title: Test
 header: "Liquidity Bootstrapping"
 subheader: "Sale Now Live On:"
 bgImage: /images/bg-5.png

@@ -13,7 +13,7 @@
             {{ doc.header }}
           </h1>
           <div class="flex gap-5 items-center h-full" id="cards">
-            <div v-if="doc.c1Token1">
+            <div v-if="doc.c1Token1" class="pulse-bg">
               <Card
                 :Cards="doc.cards"
                 :AprType="doc.aprType"
@@ -25,7 +25,7 @@
                 :Tvl="doc.c1Tvl"
               />
             </div>
-            <div v-if="doc.c2Token1">
+            <div v-if="doc.c2Token1" class="pulse-bg">
               <Card
                 :Cards="doc.cards"
                 :AprType="doc.aprType"
@@ -37,7 +37,7 @@
                 :Tvl="doc.c2Tvl"
               />
             </div>
-            <div v-if="doc.c3Token1">
+            <div v-if="doc.c3Token1" class="pulse-bg">
               <Card
                 :Cards="doc.cards"
                 :AprType="doc.aprType"

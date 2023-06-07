@@ -293,3 +293,187 @@ collections:
         }
 
       - { label: Body, name: body, widget: markdown, required: true }
+
+  - label: "Pulse: APRs"
+    name: "aprs"
+    folder: "content/pulse/aprs"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Header, name: header, widget: string }
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - label: "Number of Cards"
+        name: "cards"
+        widget: "select"
+        options: ["oneCard", "twoCard", "threeCard"]
+      - label: "APR Type"
+        name: "aprType"
+        widget: "select"
+        options: ["APR", "Projected APR"]
+      - {
+          label: "Card 1 Token 1",
+          name: "c1Token1",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Card 1 Ticker 1, name: c1Ticker1, widget: string }
+      - {
+          label: "Card 1 Token 2",
+          name: "c1Token2",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Card 1 Ticker 2, name: c1Ticker2, widget: string }
+      - { label: Card 1 Apr, name: c1Apr, widget: string }
+      - { label: Card 1 Tvl, name: c1Tvl, widget: string }
+
+      - {
+          label: "Card 2 Token 1",
+          name: "c2Token1",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - {
+          label: Card 2 Ticker 1,
+          name: c2Ticker1,
+          widget: string,
+          required: false,
+        }
+      - {
+          label: "Card 2 Token 2",
+          name: "c2Token2",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - {
+          label: Card 2 Ticker 2,
+          name: c2Ticker2,
+          widget: string,
+          required: false,
+        }
+      - { label: Card 2 Apr, name: c2Apr, widget: string, required: false }
+      - { label: Card 2 Tvl, name: c2Tvl, widget: string, required: false }
+
+      - {
+          label: "Card 3 Token 1",
+          name: "c3Token1",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - {
+          label: Card 3 Ticker 1,
+          name: c3Ticker1,
+          widget: string,
+          required: false,
+        }
+      - {
+          label: "Card 3 Token 2",
+          name: "c3Token2",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - {
+          label: Card 3 Ticker 2,
+          name: c3Ticker2,
+          widget: string,
+          required: false,
+        }
+      - { label: Card 3 Apr, name: c3Apr, widget: string, required: false }
+      - { label: Card 3 Tvl, name: c3Tvl, widget: string, required: false }
+
+      - { label: Body, name: body, widget: markdown, required: true }
+
+  - label: "Pulse: Total Bribes"
+    name: "totalbribes"
+    folder: "content/pulse/total-bribes"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Epoch, name: epoch, widget: string }
+      - { label: Total, name: total, widget: string }
+
+      - { label: Body, name: body, widget: markdown, required: true }
+
+  - label: "Pulse: Multi Rewards"
+    name: "multirewards"
+    folder: "content/pulse/multi-rewards"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - { label: Header, name: header, widget: string }
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
+          label: "Pair Token 1",
+          name: "Token1",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - { label: Pair Ticker 1, name: Ticker1, widget: string, required: false }
+      - {
+          label: "Pair Token 2",
+          name: "Token2",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - { label: Pair Ticker 2, name: Ticker2, widget: string, required: false }
+      - { label: Message, name: Message, widget: string }
+      - {
+          label: "Reward Token 1",
+          name: "r1Token",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - { label: Reward Apr 1, name: r1Apr, widget: string, required: false }
+      - {
+          label: Reward Ticker 1,
+          name: r1Ticker,
+          widget: string,
+          required: false,
+        }
+      - {
+          label: "Reward Token 2",
+          name: "r2Token",
+          widget: "image",
+          choose_url: true,
+          required: false,
+        }
+      - { label: Reward Apr 2, name: r2Apr, widget: string, required: false }
+      - {
+          label: Reward Ticker 2,
+          name: r2Ticker,
+          widget: string,
+          required: false,
+        }
+
+      - { label: Body, name: body, widget: markdown, required: true }
