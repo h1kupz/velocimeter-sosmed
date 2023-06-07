@@ -295,7 +295,7 @@ collections:
       - { label: Body, name: body, widget: markdown, required: true }
 
   - label: "Pulse: APRs"
-    name: "aprs"
+    name: "pulse-aprs"
     folder: "content/pulse/aprs"
     format: "frontmatter"
     create: true
@@ -397,7 +397,7 @@ collections:
       - { label: Body, name: body, widget: markdown, required: true }
 
   - label: "Pulse: Total Bribes"
-    name: "totalbribes"
+    name: "pulse-totalbribes"
     folder: "content/pulse/total-bribes"
     format: "frontmatter"
     create: true
@@ -416,7 +416,7 @@ collections:
       - { label: Body, name: body, widget: markdown, required: true }
 
   - label: "Pulse: Multi Rewards"
-    name: "multirewards"
+    name: "pulse-multirewards"
     folder: "content/pulse/multi-rewards"
     format: "frontmatter"
     create: true
