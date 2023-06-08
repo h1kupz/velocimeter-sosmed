@@ -1,7 +1,7 @@
 ---
 title: Stable
 header: Stable Swap
-bgImage: /images/4943.webp
+bgImage: /images/bg-3.png
 cards: oneCard
 aprType: APR
 c1Token1: /images/usdt.png
