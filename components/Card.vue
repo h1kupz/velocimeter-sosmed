@@ -3,15 +3,15 @@
     <div
       class="flex items-start rounded-t-3xl p-5 mx-auto bg-gradient-to-l from-background/80 to-lbackground/70 h-32 border border-b-0 border-text/30"
     >
-      <img src="/assets/CantoLogo.svg" alt="" class="h-6 ml-auto mr-3" />
+      <img :src="Logo" alt="" class="h-6 ml-auto mr-3" />
       <div class="flex flex-col">
         <h5
-          class="font-medium text-cgreen text-[10px] text-left leading-2 -mt-[1px]"
+          class="font-medium text-vgreen text-[10px] text-left leading-2 -mt-[1px]"
         >
           Live on:
         </h5>
-        <h5 class="font-medium text-cgreen text-sm text-left tracking-wider">
-          CANTO
+        <h5 class="font-medium text-vgreen text-sm text-left tracking-wider">
+          {{ Chain }}
         </h5>
       </div>
     </div>
@@ -72,6 +72,14 @@ const props = defineProps({
     required: false,
   },
   Tvl: {
+    type: String,
+    required: false,
+  },
+  Chain: {
+    type: String,
+    required: false,
+  },
+  Logo: {
     type: String,
     required: false,
   },

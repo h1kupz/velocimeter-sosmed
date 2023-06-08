@@ -27,6 +27,8 @@
                 :Ticker2="doc.c1Ticker2"
                 :Apr="doc.c1Apr"
                 :Tvl="doc.c1Tvl"
+                Chain="CANTO"
+                Logo="/assets/CantoLogo.svg"
               />
             </div>
             <div v-if="doc.c2Token1">
@@ -39,6 +41,8 @@
                 :Ticker2="doc.c2Ticker2"
                 :Apr="doc.c2Apr"
                 :Tvl="doc.c2Tvl"
+                Chain="CANTO"
+                Logo="/assets/CantoLogo.svg"
               />
             </div>
             <div v-if="doc.c3Token1">
@@ -51,6 +55,8 @@
                 :Ticker2="doc.c3Ticker2"
                 :Apr="doc.c3Apr"
                 :Tvl="doc.c3Tvl"
+                Chain="CANTO"
+                Logo="/assets/CantoLogo.svg"
               />
             </div>
           </div>
