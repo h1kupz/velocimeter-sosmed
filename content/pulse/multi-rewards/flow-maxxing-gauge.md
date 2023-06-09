@@ -14,4 +14,5 @@ r2Token: /images/PulseLogoTransparent.png
 r2Apr: ~1000
 r2Ticker: WPLS
 ---
-a﻿sdf
+
+#
