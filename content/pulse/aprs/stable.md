@@ -2,7 +2,7 @@
 title: Stable
 header: Do you have your fingers on the Stablecoin Pulse?
 bgImage: /images/bg-3.png
-cards: oneCard
+cards: threeCard
 aprType: APR
 c1Token1: /images/usdt.png
 c1Ticker1: USDT
