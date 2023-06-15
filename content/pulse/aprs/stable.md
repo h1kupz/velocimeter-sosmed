@@ -1,6 +1,6 @@
 ---
 title: Stable
-header: Stable FLOW
+header: Do you have your fingers on the Stablecoin Pulse?
 bgImage: /images/bg-3.png
 cards: oneCard
 aprType: APR
