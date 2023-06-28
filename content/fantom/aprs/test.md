@@ -1,7 +1,7 @@
 ---
 title: Test
-header: Injective is the fastest PoS layer 1 blockchain. LP $INJ & earn $FLOW
-bgImage: /images/blackhole4.png
+header: LP $INJ & earn $FLOW
+bgImage: /images/blackhole2.png
 cards: twoCard
 aprType: APR
 c1Token1: /images/inj.png

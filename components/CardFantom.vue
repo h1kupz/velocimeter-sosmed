@@ -1,9 +1,9 @@
 <template>
   <div class="rounded-t-3xl drop-shadow-v">
     <div
-      class="flex items-start rounded-t-3xl p-5 mx-auto bg-gradient-to-l from-background/80 to-lbackground/70 h-32 border border-b-0 border-text/30"
+      class="flex items-start rounded-t-3xl p-5 mx-auto bg-gradient-to-l from-background/60 to-vgreen/50 h-32 border border-b-0 border-vgreen-dark/30"
     >
-      <img :src="Logo" alt="" class="h-6 ml-auto mr-3 rounded-full" />
+      <img :src="Logo" alt="" class="h-10 ml-auto mr-3 -mt-2 rounded-full" />
       <div class="flex flex-col">
         <h5
           class="font-medium text-vgreen text-[10px] text-left leading-2 -mt-[1px]"
@@ -17,7 +17,7 @@
     </div>
     <div
       :class="Cards"
-      class="rounded-b-3xl p-6 mx-auto bg-gradient-to-r from-background/60 to-lbackground/50 border border-t-0 border-text/30"
+      class="rounded-b-3xl p-6 mx-auto bg-gradient-to-r from-background/50 to-lbackground/40 border-2 border-t-0 border-vgreen-dark/30 text-vgreen"
     >
       <div class="flex">
         <img
