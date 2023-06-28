@@ -24,7 +24,7 @@
                 :Apr="doc.c1Apr"
                 :Tvl="doc.c1Tvl"
                 Chain="FANTOM"
-                Logo="/images/FantomEventLogo.jpg"
+                Logo="/images/FantomNoBg.png"
               />
             </div>
             <div v-if="doc.c2Token1" class="drop-shadow-fvm">
@@ -38,7 +38,7 @@
                 :Apr="doc.c2Apr"
                 :Tvl="doc.c2Tvl"
                 Chain="FANTOM"
-                Logo="/images/FantomEventLogo.jpg"
+                Logo="/images/FantomNoBg.png"
               />
             </div>
             <div v-if="doc.c3Token1" class="drop-shadow-fvm">
@@ -52,7 +52,7 @@
                 :Apr="doc.c3Apr"
                 :Tvl="doc.c3Tvl"
                 Chain="FANTOM"
-                Logo="/images/FantomEventLogo.jpg"
+                Logo="/images/FantomNoBg.png"
               />
             </div>
           </div>

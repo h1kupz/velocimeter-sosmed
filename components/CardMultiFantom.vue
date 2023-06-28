@@ -4,7 +4,7 @@
       class="flex items-start rounded-t-3xl p-5 mx-auto bg-gradient-to-l from-background/60 to-vgreen/50 h-24 border border-b-0 border-vgreen-dark/30"
     >
       <img
-        src="/images/FantomEventLogo.jpg"
+        src="/images/FantomNoBg.png"
         alt=""
         class="h-10 ml-auto mr-3 -mt-2 rounded-full"
       />
@@ -14,7 +14,7 @@
         >
           Live on:
         </h5>
-        <h5 class="font-medium text-cgreen text-sm text-left tracking-wider">
+        <h5 class="font-medium text-vgreen text-sm text-left tracking-wider">
           FANTOM
         </h5>
       </div>
