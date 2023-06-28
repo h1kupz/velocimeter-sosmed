@@ -1,7 +1,7 @@
 <template>
   <div class="flex w-full mt-auto absolute bottom-0" id="footer">
     <img
-      src="/images/FantomEventLogo.jpg"
+      src="/images/FantomNoBg.png"
       alt=""
       class="w-28 mr-auto mt-auto rounded-full p-6 ml-6 drop-shadow-fvm"
     />
