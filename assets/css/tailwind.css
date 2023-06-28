@@ -88,6 +88,9 @@
   .pulse-bg {
     @apply p-[2px] rounded-3xl bg-gradient-to-b from-[#01b9f6] via-[#215cf6] to-[#f10732] drop-shadow-v;
   }
+  .fantom-bg {
+    @apply p-[2px] rounded-3xl bg-gradient-to-b from-[#f2f4f4] to-[#2c6cf6] drop-shadow-v;
+  }
 }
 
 .oneCard {
