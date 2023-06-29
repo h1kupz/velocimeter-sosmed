@@ -9,7 +9,7 @@
           class="tweet-background pb-10"
         >
           <TweetHeaderFantom />
-          <h1 class="w-full mb-6 text-left text-vgreen drop-shadow-fvm">
+          <h1 class="w-full mb-6 text-center text-vgreen drop-shadow-fvm">
             {{ doc.header }}
           </h1>
           <div class="mb-auto">

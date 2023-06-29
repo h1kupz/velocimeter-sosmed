@@ -479,6 +479,25 @@ collections:
 
       - { label: Body, name: body, widget: markdown, required: true }
   # FANTOM
+  - label: "fantom: Announcement"
+    name: "fantom-announcement"
+    folder: "content/fantom/announcements"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Header, name: header, widget: string }
+      - { label: Subheader, name: subheader, widget: string }
+
+      - { label: Body, name: body, widget: markdown, required: true }
+
   - label: "fantom: APRs"
     name: "fantom-aprs"
     folder: "content/fantom/aprs"
