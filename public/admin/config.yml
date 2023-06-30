@@ -601,7 +601,7 @@ collections:
       - { label: Body, name: body, widget: markdown, required: true }
 
   - label: "fantom: Partnership"
-    name: "partnership"
+    name: "fantom-partnership"
     folder: "content/fantom/partnership"
     format: "frontmatter"
     create: true
@@ -636,7 +636,7 @@ collections:
       - { label: Body, name: body, widget: markdown, required: true }
 
   - label: "fantom: Matched Bribe"
-    name: "bribe-matching"
+    name: "fantom-bribe-matching"
     folder: "content/fantom/bribe-matching"
     format: "frontmatter"
     create: true
