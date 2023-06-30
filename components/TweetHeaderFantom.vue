@@ -4,7 +4,7 @@
     <img
       src="/images/by-velo.png"
       alt=""
-      class="h-5 drop-shadow-fvm mt-auto mb-1.5 ml-auto"
+      class="h-4 drop-shadow-fvm mt-auto mb-1.5 ml-auto"
     />
   </div>
 </template>
