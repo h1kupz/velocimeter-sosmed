@@ -1,5 +1,5 @@
 ---
-title: "Ethos "
+title: Ethos darker
 template: one
 bgImage: /images/background10.png
 tPartner: /images/ethos_logo_light.svg
