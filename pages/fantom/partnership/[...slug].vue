@@ -34,7 +34,11 @@
               class="h-20 mx-8 mb-1 drop-shadow-fvm"
             />
             <div class="flex flex-col items-center justify-center h-full">
-              <img src="/images/fvm.png" alt="" class="h-28 drop-shadow-fvm" />
+              <img
+                src="/images/FVM-token-blu.png"
+                alt=""
+                class="h-80 drop-shadow-fvm"
+              />
             </div>
           </div>
           <div
