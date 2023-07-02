@@ -5,9 +5,11 @@
       alt=""
       class="w-28 mr-auto mt-auto rounded-full p-6 ml-6 drop-shadow-v"
     />
-    <h5 class="text-center mt-auto mb-8 drop-shadow-v text-2xl">
-      pulse.velocimeter.xyz
-    </h5>
+    <img
+      src="/assets/pulse-url.svg"
+      alt=""
+      class="w-full h-8 mt-auto mb-6 drop-shadow-v"
+    />
     <img
       src="/assets/V.png"
       alt=""

@@ -1,8 +1,10 @@
 <template>
   <div class="flex w-full mt-auto absolute bottom-0" id="footer">
-    <h5 class="text-center w-full mt-auto ml-36 mb-6 drop-shadow-v">
-      velocimeter.xyz
-    </h5>
+    <img
+      src="/assets/canto-url.svg"
+      alt=""
+      class="w-full h-10 mt-auto ml-36 mb-6 drop-shadow-v"
+    />
     <img
       src="/assets/V.png"
       alt=""
