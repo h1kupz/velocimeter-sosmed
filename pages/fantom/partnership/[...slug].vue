@@ -25,7 +25,7 @@
               <img
                 :src="doc.mPartner"
                 alt=""
-                class="h-80 mx-auto drop-shadow-fvm"
+                class="h-96 mx-auto drop-shadow-fvm"
               />
             </div>
             <img
@@ -37,7 +37,7 @@
               <img
                 src="/images/FVM-token-blu.png"
                 alt=""
-                class="h-80 drop-shadow-fvm"
+                class="h-96 drop-shadow-fvm"
               />
             </div>
           </div>
