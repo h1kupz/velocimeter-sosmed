@@ -15,7 +15,7 @@
               alt=""
               class="h-5 mt-[2px] drop-shadow-fvm"
             />
-            <img src="/images/fvm.png" alt="" class="h-6 drop-shadow-fvm" />
+            <img src="/images/fvm.png" alt="" class="h-9 drop-shadow-fvm" />
           </div>
           <div
             v-if="doc.template === 'one'"
