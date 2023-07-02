@@ -5,9 +5,10 @@
       alt=""
       class="w-28 mr-auto mt-auto rounded-full p-6 ml-6 drop-shadow-fvm"
     />
-    <h5 class="text-center mt-auto mb-8 drop-shadow-fvm text-2xl text-vgreen">
+    <!-- <h5 class="text-center mt-auto mb-8 drop-shadow-fvm text-2xl text-vgreen">
       fvm.exchange
-    </h5>
+    </h5> -->
+    <img src="/assets/fvm-url.svg" alt="" class="h-8 mt-12" />
     <img
       src="/assets/V.png"
       alt=""
