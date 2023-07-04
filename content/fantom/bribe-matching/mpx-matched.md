@@ -1,7 +1,7 @@
 ---
 title: mpx matched
 bgImage: /images/blackhole4.png
-partner: /images/xtk3fkxe_400x400.jpg
+partner: /images/morphex_full_blue.png
 total: "16000"
 token1: /images/mpx_logo_256.webp
 t1Amount: "8000"
