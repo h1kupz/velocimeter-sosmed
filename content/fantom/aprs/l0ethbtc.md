@@ -1,5 +1,5 @@
 ---
-title: Layer Zero Eth / Btc
+title: new lz weth btc
 header: New Pools for wETH & wBTC Bridged to Fantom Via Stargate
 bgImage: /images/blackhole4.png
 cards: twoCard
