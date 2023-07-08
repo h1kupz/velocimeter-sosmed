@@ -2,8 +2,8 @@
 title: Layer Zero Eth / Btc
 header: Check the APRs on wETH & wBTC Bridged to Fantom Via Stargate
 bgImage: /images/blackhole4.png
-cards: threeCard
-aprType: APR
+cards: twoCard
+aprType: Projected APR
 c1Token1: /images/eth.png
 c1Ticker1: WETH
 c1Token2: /images/btc.png
