@@ -695,6 +695,47 @@ collections:
 
       - { label: Body, name: body, widget: markdown, required: true }
 
+  - label: "fantom: Partner Bribes"
+    name: "fantom-partnerbribes"
+    folder: "content/fantom/partner-bribes"
+    format: "frontmatter"
+    create: true
+    fields:
+      - { label: Title, name: title, widget: string }
+      - {
+          label: "Background Image",
+          name: "bgImage",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - {
+          label: "Partner Logo",
+          name: "partner",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Bribe Amount, name: bribeAmount, widget: string }
+      - {
+          label: "Pair Token 1",
+          name: "pt1",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Ticker 1, name: pt1Ticker, widget: string }
+      - {
+          label: "Pair Token 2",
+          name: "pt2",
+          widget: "image",
+          choose_url: true,
+          required: true,
+        }
+      - { label: Ticker 2, name: pt2Ticker, widget: string }
+
+      - { label: Body, name: body, widget: markdown, required: true }
+
   - label: "fantom: Total Bribes"
     name: "fantom-totalbribes"
     folder: "content/fantom/total-bribes"

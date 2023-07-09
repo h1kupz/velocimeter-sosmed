@@ -18,9 +18,6 @@
   header {
     @apply sticky top-0 layout py-4;
   }
-  nav {
-    @apply flex justify-between items-center bg-primary layout rounded-t-2xl rounded-b p-4;
-  }
   nav ul {
     @apply flex flex-col md:flex-row gap-lg md:gap-sm md:ml-auto font-inter text-nav text-3xl md:text-lg;
   }
