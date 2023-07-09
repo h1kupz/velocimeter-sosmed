@@ -1,7 +1,7 @@
 ---
 title: mpx
 bgImage: /images/bg-5.png
-partner: /images/morphex_full_black.png
+partner: /images/morphex_full_blue.png
 bribeAmount: "6783"
 pt1: /images/fantom.webp
 pt1Ticker: wFTM
