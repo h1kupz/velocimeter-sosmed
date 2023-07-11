@@ -4,7 +4,7 @@ header: mai
 bgImage: /images/background10.png
 cards: oneCard
 aprType: Projected APR
-c1Token1: /images/mimatic-red.png
+c1Token1: /images/2.-mai_logo.svg
 c1Ticker1: MAI
 c1Token2: /images/usdc.jpg
 c1Ticker2: USDC
