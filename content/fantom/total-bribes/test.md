@@ -1,8 +1,8 @@
 ---
 title: Test
-bgImage: /images/blackhole4.png
-epoch: "1"
-total: 47,297
+bgImage: /images/velocimeter-partnerships-updated-bg-1-.jpg
+epoch: "2"
+total: 25,440 so far
 ---
 
 #
