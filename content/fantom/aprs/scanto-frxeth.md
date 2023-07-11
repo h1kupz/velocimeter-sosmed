@@ -1,5 +1,5 @@
 ---
-title: scanto frxETH
+title: wwwscanto frxETH
 header: "LSD Pool "
 bgImage: /images/bg-4.png
 cards: oneCard
