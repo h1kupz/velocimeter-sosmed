@@ -6,7 +6,7 @@ cards: oneCard
 aprType: APR
 c1Token1: /images/FVM-token-blu.png
 c1Ticker1: Single FVM Staking
-c1Token2: /images/FVM-token-blu.png
+c1Token2: /images/flow-10.png
 c1Ticker2: adsf
 c1Apr: "2972952"
 c1Tvl: "1000"
