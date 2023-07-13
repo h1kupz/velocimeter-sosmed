@@ -7,8 +7,8 @@ aprType: APR
 c1Token1: /images/FVM-token-blu.png
 c1Ticker1: Single FVM Staking
 c1Token2: /images/flow-10.png
-c1Ticker2: adsf
-c1Apr: "2972952"
+c1Ticker2: "REPLAE "
+c1Apr: 438-1666%
 c1Tvl: "1000"
 c2Token1: /images/FVM-token-blu.png
 c2Ticker1: adsf
