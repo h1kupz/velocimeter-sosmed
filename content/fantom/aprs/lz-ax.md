@@ -2,7 +2,7 @@
 title: lz ax
 header: New Pools for wETH & wBTC Bridged to Fantom Via Stargate
 bgImage: /images/background9.png
-cards: twoCard
+cards: threeCard
 aprType: Projected APR
 c1Token1: /images/eth.png
 c1Ticker1: axlWETH
